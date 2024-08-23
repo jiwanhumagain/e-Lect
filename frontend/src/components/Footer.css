@@ -1,0 +1,28 @@
+.footer {
+  background-color: #1c82ad;
+  color: black;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}

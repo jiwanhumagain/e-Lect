@@ -1,0 +1,115 @@
+/* Styling the outermost div with a gradient background */
+.home {
+  background: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling the winner div */
+.winner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  align-self: flex-start;
+}
+
+/* Styling the winner_info div */
+.winner_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* align to the left */
+  align-items: center;
+}
+
+/* Styling the countdown timer */
+.winner_message {
+  margin-top: 20px;
+  font-size: 14px;
+  color: red; /* change the color to blue */
+  display: flex;
+  justify-content: flex-end; /* align to the right */
+  align-items: center;
+}
+
+/* Styling the countdown timer span */
+.winner_message span {
+  font-size: 20px; /* increase the font size */
+  margin-left: 5px; /* add some margin to the left */
+}
+
+/* Styling the candidate_list div */
+.candidate_list {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+  margin: 10px;
+}
+.voter_list {
+  font-size: 20px;
+  font-style: italic;
+  color: blue;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Styling the Card component */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.card button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0069d9;
+}
+
+.card button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
